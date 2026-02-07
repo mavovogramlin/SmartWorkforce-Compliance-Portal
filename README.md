@@ -1,7 +1,4 @@
-# SmartWorkforce-Compliance-Portal
-A lightweight internal system that helps Deviare track employee requests, compliance documents, approvals, and automated workflows, with insights and low-code extensions using Power Platform.
 # Smart Workforce Compliance & Automation Portal
-
 ## Overview
 A hybrid enterprise solution combining ASP.NET Core MVC with Microsoft Power Platform to automate workforce requests, approvals, compliance tracking, and reporting.
 
