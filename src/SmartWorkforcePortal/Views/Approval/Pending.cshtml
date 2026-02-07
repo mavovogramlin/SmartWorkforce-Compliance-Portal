@@ -1,0 +1,29 @@
+@model IEnumerable<SmartWorkforcePortal.Models.Request>
+
+<h2>Pending Requests</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Employee</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Created Date</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var r in Model)
+    {
+        <tr>
+            <td>@r.UserId</td>
+            <td>@r.RequestType</td>
+            <td>@r.Description</td>
+            <td>@r.CreatedDate.ToString("yyyy-MM-dd")</td>
+            <td>
+                <a asp-action="Review" asp-route-id="@r.RequestId" class="btn btn-primary btn-sm">Review</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
